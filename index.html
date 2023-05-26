@@ -6,139 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Game</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
   </head>
   <body>
-    <div class="game">
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
-      <div class="listItem">
-        <div class="flip front-view cartImg">
-          <img src="./Memory Card Game Images/img-1.png" alt="" />
-        </div>
-        <div class="flip back-view">
-          <img src="./Memory Card Game Images/tải xuống.png" alt="" />
-        </div>
-      </div>
+    <div id="game"></div>
+    <div id="timeOut"></div>
+    <button
+      class="button is-success is-rounded homePage"
+      style="
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <a href="" target="_parent" style="color: white"> Home Page</a>
+    </button>
+    <div id="choose">
+      <button class="button is-primary is-active">
+        <a href="" target="_parent" style="color: white">Play again</a>
+      </button>
+      <button class="button is-link is-active">
+        <a href="" target="_parent" style="color: white">Continue</a>
+      </button>
     </div>
-    <div class="timeGame"></div>
     <script src="./main.js"></script>
   </body>
 </html>

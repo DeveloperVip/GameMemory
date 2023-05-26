@@ -2,14 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 body {
-  display: flex;
   height: 100vh;
+  background-image: url(./1553591642_kim-cuong-co-dien-1.png);
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
-.game {
+.homePage a {
+  text-decoration: none;
+}
+#game {
   background-color: blue;
   width: 400px;
   height: 400px;
@@ -19,12 +27,28 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+#timeOut {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: auto;
+  font-size: x-large;
+  text-align: center;
+}
+#choose {
+  display: none;
+}
+#choose.afterChoose {
+  display: block;
+}
 .listItem {
   width: calc(100% / 4 - 10px);
   height: calc(100% / 4 - 10px);
   display: flex;
   position: relative;
-  box-shadow: 0px 0px 46px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   perspective: 800px;
 
@@ -41,7 +65,7 @@ body {
   user-select: none;
   pointer-events: none;
   position: absolute;
-  transition: transform 0.25s linear;
+  transition: transform 0.35s linear;
   backface-visibility: hidden;
 }
 .front-view {
