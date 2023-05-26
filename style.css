@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   background-image: url(./1553591642_kim-cuong-co-dien-1.png);
+  background-repeat: non-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
